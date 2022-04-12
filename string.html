@@ -1,0 +1,74 @@
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    const firstName = "Tom"
+    const lastName = "CHen"
+    const department = "rd"
+    // console.log(firstName + " " + lastName)
+    // console.log("I am \"tom\"")
+    console.log('Hi!\nI am "Tom"')
+
+    // console.log("Hi!" + firstName +" " +lastName +"is from " + department)
+
+
+    // console.log(
+    //   `Hi! ${firstName} ${lastName} is from ${department}`
+    // )
+
+    const intro = `Hi! ${firstName} ${lastName} is from ${department}`
+    console.log(intro)
+
+
+    //大小寫
+
+    console.log(intro.toUpperCase())
+    console.log(intro.toLowerCase())
+
+    //查字
+
+    console.log(intro.indexOf('Tom'))
+    console.log(intro.indexOf('!'))
+    console.log(intro.indexOf('?'))
+    console.log(intro.lastIndexOf('i'))
+
+
+    console.log(intro.charAt(6))
+
+
+
+    console.log(intro.length)
+    console.log(intro.slice(3, 5))
+    console.log(intro.slice(0, -1))
+
+    console.log(intro.slice(-2))
+
+
+
+    //切割
+    console.log(intro.split(' '))
+    console.log(intro.split('!'))
+    console.log(intro.split('Tom'))
+
+
+    //替換
+    console.log(intro.replace('!', '?'))
+
+
+    //包含單字
+
+    console.log(intro.indexOf('Hello') >= 0)
+    console.log(intro.includes('Hello'))
+
+</script>
+
+</html>
