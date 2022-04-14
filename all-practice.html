@@ -1,0 +1,32 @@
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 質數 除了１與本身沒以其他的沒以其他的因數
+    // 因數 可以整除的樹
+    // % mod 取餘數, 整除mod為零 
+    let x = 6;
+    // flag 標記
+    let isNotPrime = false
+    for(let i = 2; i<= x-1 ;i++){
+        // console.log(`${x} % ${i} = ${x % i}`)      
+        if(x%i===0){
+            isNotPrime = true;
+            break;
+        }
+    }
+    if(isNotPrime){
+        console.log(`${x}不是質數`)
+    }else{
+        console.log(`${x}是質數`)
+    }
+
+</script>
+</html>
